@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>meme project</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body onload="onInit()"></body>
+<div class="main-menu">
+<h1>meme gallery</h1>
+<select onchange="onSetLang(this.value)">
+    <option value="en">English</option>
+    <option value="he">עברית</option>
+</select>
+<section class="filter-container">
+    <h2>Filter</h2>
+    <select onchange="onSetFilter(this.value)">
+        <option value="all" data-trans="filter-all">All</option>
+        <option value="active" data-trans="filter-active">Active</option>
+        <option value="done" data-trans="filter-done">Done</option>
+    </select>
+</section>
+</div>
+<section class="img-container">
+
+
+    <script src="js/util-service.js"></script>
+    <script src="js/i18n-service.js"></script>
+    <script src="js/meme-service.js"></script>
+    <script src="js/meme-controller.js"></script>
+    </body>
+
+</html>
